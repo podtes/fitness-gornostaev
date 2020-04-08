@@ -1,0 +1,80 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
+    url("../fonts/BebasNeue-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/BebasNeue-Bold.woff2") format("woff2"),
+    url("../fonts/BebasNeue-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 100;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"),
+  url("../fonts/RobotoCondensed-light.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.fix-body {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

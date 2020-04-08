@@ -14,9 +14,58 @@
   <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Light.woff" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div class="intro-header-wrapper">
+    <header class="page-header container">
+      <a class="page-header__logo" href="#">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./img/logo-mob@1x.png 1x, ./img/logo-mob@2x.png 2x">
+          <source media="(max-width: 1199px)" srcset="./img/logo-tab@1x.png 1x, ./img/logo-tab@2x.png 2x">
+          <img src="./img/logo-desktop@1x.png" srcset="./img/logo-desktop@2x.png 2x" alt="логотоп компании Super Gym" class="page-header__logo-img" width="87" height="20">
+        </picture>
+      </a>
+      <a class="page-header__phone" href="tel:88005555555">8-800-555-55-55</a>
+    </header>
+    <div class="intro container">
+      <h1 class="visually-hidden">Super Gym - фитнес центр в городе Омск</h1>
+      <div class="intro__wrapper">
+          <b>Омск</b>
+          <h2>Фитнес центр</h2>
+          <ul class="intro__zones-list">
+            <li>Тренажерный зал</li>
+            <li>Групповые занятия</li>
+            <li>Кардио-зона</li>
+          </ul>
+        <a class="intro__buy-subscription" href="#">Купить абонемент</a>
+      </div>
+      <ul class="intro__social-list">
+        <li>
+          <a href="#">fb</a>
+        </li>
+        <li>
+          <a href="#">vk</a>
+        </li>
+        <li>
+          <a href="#">ig</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <main>
+    <section class="gym">
+      <div class="container">
+        <div class="gym__text-wrapper">
+          <h2>Тренажерный зал</h2>
+          <b>Просторный зал площадью 900 кв/м</b>
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

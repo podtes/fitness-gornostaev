@@ -1,0 +1,17 @@
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: $tab-width) {
+  .container {
+    max-width: 678px;
+  }
+}
+
+@media (max-width: $mob-width) {
+  .container {
+    max-width: 290px;
+  }
+}
