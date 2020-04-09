@@ -1,0 +1,278 @@
+.promo {
+  padding-top: 119px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.promo__card {
+  padding-top: 89px;
+  padding-left: 78px;
+  padding-bottom: 109px;
+  background-color: #ed0233;
+  background-image: url("../img/contest-pic-desk@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 660px 500px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/contest-pic-desk@2x.jpg");
+  }
+}
+
+.promo___card-wrapper {
+  margin-bottom: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo b {
+  margin: 0;
+  margin-right: 36px;
+  padding: 0;
+  max-width: 215px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.promo__date-time-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.promo__date {
+  transform: translateY(-9px);
+}
+
+.promo__date-span {
+  position: relative;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -9px;
+    left: 0;
+    width: 64px;
+    height: 1px;
+    background-color: #ffffff;
+  }
+}
+
+.promo__date-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo__date-wrapper span {
+  margin-right: 6px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.promo__date-wrapper p {
+  margin: 0;
+  padding: 0;
+  max-width: 64px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  transform: translateY(9px);
+}
+
+.promo__time {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.promo__time span:first-child {
+  position: relative;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 88px;
+    height: 1px;
+    background-color: #ffffff;
+  }
+}
+
+.promo__time span:last-child {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.promo h2 {
+  margin: 0;
+  margin-bottom: 71px;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  letter-spacing: -0.008em;
+}
+
+.promo a {
+  padding-right: 112px;
+  padding-left: 110px;
+  padding-top: 23px;
+  padding-bottom: 24px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: $tab-width) {
+  .promo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .promo__card {
+    padding-top: 52px;
+    padding-left: 45px;
+    padding-bottom: 60px;
+    background-image: url("../img/contest-pic-tab@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 386px 292px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/contest-pic-tab@2x.jpg");
+    }
+  }
+
+  .promo___card-wrapper {
+    margin-bottom: 0;
+  }
+
+  .promo b {
+    max-width: 120px;
+    margin-right: 26px;
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .promo__date {
+    transform: translateY(-5px);
+  }
+
+  .promo__date-span {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+
+    &::before {
+      bottom: -2px;
+      width: 42px;
+    }
+  }
+
+  .promo__date-wrapper span {
+    margin-right: 4px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .promo__date-wrapper p {
+    max-width: 44px;
+    font-size: 10px;
+    line-height: 14px;
+    transform: translateY(3px);
+  }
+
+  .promo__time {
+    transform: translateY(-6px);
+  }
+
+  .promo__time span:first-child {
+    font-size: 12px;
+    line-height: 18px;
+
+    &::before {
+      bottom: -2px;
+      width: 56px;
+    }
+  }
+
+  .promo__time span:last-child {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .promo h2 {
+    margin-bottom: 43px;
+    font-size: 12px;
+    line-height: 10px;
+    letter-spacing: 0;
+  }
+
+  .promo a {
+    padding: 13px 53px 14px 50px;
+    font-size: 10px;
+    line-height: 12px;
+    border: 2px solid #ffffff;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (max-width: $mob-width) {
+  .promo {
+    padding-top: 73px;
+    padding-bottom: 100px;
+  }
+
+  .promo__card {
+    padding-bottom: 352px;
+    background-image: url("../img/contest-pic-mob@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 290px 292px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/contest-pic-mob@2x.jpg");
+    }
+  }
+
+  .promo b {
+    margin-right: 25px;
+  }
+}
