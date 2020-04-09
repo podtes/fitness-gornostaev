@@ -1,0 +1,294 @@
+.subscriptions {
+  padding-top: 122px;
+  padding-bottom: 123px;
+  background-color: #f8f9fc;
+  color: #000000;
+  text-align: center;
+}
+
+.subscriptions h2 {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.subscriptions__months-list {
+  margin: 0 auto;
+  margin-bottom: 38px;
+  padding: 0;
+  padding-bottom: 11px;
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.subscriptions__months-item {
+  margin: 0;
+  margin-right: 47px;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8893aa;
+  opacity: 0.5;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    position: relative;
+    color: #102654;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -13px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #d10a42;
+    }
+  }
+}
+
+.subscriptions__tariffes-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subscriptions__tariffes-item {
+  position: relative;
+  padding: 64px 78px;
+  margin-right: 41px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ffffff;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.subscriptions__tariffes-item h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  color: #102654;
+}
+
+.subscriptions__tariffes-item p {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #495a7d;
+}
+
+.subscription__shadow-price {
+  margin-bottom: 25px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 150px;
+  color: #e8e8e8;
+  opacity: 0.48;
+}
+
+.subscriptions__tariffes-item b {
+  position: absolute;
+  top: 193px;
+  left: 95px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 90px;
+  color: #103aae;
+}
+
+.subscription__ruble {
+  padding-left: 13px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 90px;
+  color: #102654;
+  //TODO: с рублем надо что-то сделать или пускай таким остается?
+}
+
+.subscriptions__tariffes-item a {
+  margin: 0;
+  padding: 24px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #102654;
+  border: 2px solid #102654;
+  cursor: pointer;
+}
+
+@media (max-width: $tab-width) {
+  .subscriptions {
+    padding-top: 103px;
+    padding-bottom: 63px;
+  }
+
+  .subscriptions h2 {
+    margin-bottom: 26px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .subscriptions__months-list {
+    padding-bottom: 12px;
+    margin-bottom: 44px;
+  }
+
+  .subscriptions__months-item {
+    margin-right: 55px;
+    font-size: 18px;
+    line-height: 27px;
+
+    &::before {
+      bottom: -14px;
+    }
+  }
+
+  .subscriptions__tariffes-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscriptions__tariffes-item {
+    max-width: 442px;
+    padding: 64px 120px;
+    padding-bottom: 67px;
+    margin-right: 0;
+    margin-bottom: 39px;
+    box-sizing: border-box;
+  }
+
+  .subscriptions__tariffes-item b {
+    left: 138px;
+  }
+}
+
+@media (max-width: $mob-width) {
+  .subscriptions {
+    padding-top: 70px;
+    padding-bottom: 63px;
+  }
+
+  .subscriptions h2 {
+    margin-bottom: 21px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .subscriptions__months-list {
+    padding-bottom: 12px;
+    margin-bottom: 34px;
+  }
+
+  .subscriptions__months-item {
+    margin-right: 46px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      bottom: -14px;
+      //TODO: не совпадает по макету, но мне кажется проблема с макетом, на других разрешениях нижняя граница активного элемента совпадает по ширине с надписью
+    }
+  }
+
+  .subscriptions__tariffes-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscriptions__tariffes-item {
+    width: 100%;
+    padding: 0;
+    padding-top: 51px;
+    padding-bottom: 54px;
+    margin-right: 0;
+    margin-bottom: 39px;
+    box-sizing: border-box;
+  }
+
+  .subscriptions__tariffes-item h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .subscriptions__tariffes-item p {
+    margin-bottom: 11px;
+  }
+
+  .subscription__shadow-price {
+    margin-bottom: 24px;
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .subscriptions__tariffes-item b {
+    font-size: 48px;
+    line-height: 72px;
+    top: 163px;
+    left: 81px;
+  }
+
+  .subscription__ruble {
+    padding-left: 9px;
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .subscriptions__tariffes-item a {
+    width: 204px;
+    transform: translateX(41px);
+  }
+}
