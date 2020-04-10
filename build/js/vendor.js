@@ -8663,7 +8663,6 @@
 
 'use strict';
 
-
 (function () {
   if (window.main.getWindowWidth() < 768) {
     return new window.Swiper('#trainers-swiper.swiper-container', {

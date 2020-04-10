@@ -11,10 +11,17 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
-var svgstore = require("gulp-svgstore")
+var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var concat = require("gulp-concat");
+
+gulp.task("scripts", function () {
+  return gulp.src(["./node_modules/swiper/js/swiper.js", "./source/js/swipers.js"])
+    .pipe(concat("vendor.js"))
+    .pipe(gulp.dest("./build/js"));
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -97,5 +104,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "scripts"));
 gulp.task("start", gulp.series("build", "server"));
