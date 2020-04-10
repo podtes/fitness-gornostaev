@@ -1,6 +1,6 @@
 .subscriptions {
   padding-top: 122px;
-  padding-bottom: 123px;
+  padding-bottom: 100px;
   background-color: #f8f9fc;
   color: #000000;
   text-align: center;
@@ -85,20 +85,31 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .subscriptions__tariffes-item {
   position: relative;
-  padding: 64px 78px;
-  margin-right: 41px;
+  width: 360px;
+  padding-top: 56px;
+  padding-bottom: 52px;
+  margin-right: 40px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   background-color: #ffffff;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 7px solid transparent;
 
-  &:last-child {
+  &:nth-child(3n) {
     margin-right: 0;
+  }
+
+  &:hover {
+    border-image: linear-gradient(135deg, #d10a42, #00359f);
+    border-image-slice: 1;
   }
 }
 
@@ -115,7 +126,7 @@
 
 .subscriptions__tariffes-item p {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 37px;
   padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
@@ -123,42 +134,42 @@
   color: #495a7d;
 }
 
-.subscription__shadow-price {
-  margin-bottom: 25px;
+.subscriptions__shadow-price {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: bold;
   font-size: 100px;
-  line-height: 150px;
+  line-height: 100px;
   color: #e8e8e8;
   opacity: 0.48;
 }
 
+.subscriptions__price-wrapper {
+  transform: translateY(-56px);
+}
+
 .subscriptions__tariffes-item b {
-  position: absolute;
-  top: 193px;
-  left: 95px;
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: bold;
   font-size: 60px;
-  line-height: 90px;
+  line-height: 60px;
   color: #103aae;
 }
 
-.subscription__ruble {
-  padding-left: 13px;
+.subscriptions__ruble {
+  padding-left: 8px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: normal;
   font-size: 60px;
-  line-height: 90px;
+  line-height: 60px;
   color: #102654;
   //TODO: с рублем надо что-то сделать или пускай таким остается?
 }
 
 .subscriptions__tariffes-item a {
   margin: 0;
-  padding: 24px 0;
+  padding: 24px 44px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: bold;
   font-size: 12px;
@@ -168,12 +179,23 @@
   color: #102654;
   border: 2px solid #102654;
   cursor: pointer;
+  transform: translateY(-8px);
+
+  &:hover {
+    border: transparent;
+    background: linear-gradient(to right, #d10a42, #00359f);
+    color: #ffffff;
+  }
+
+  &:active {
+    background: linear-gradient(to left, #d10a42, #00359f);
+  }
 }
 
 @media (max-width: $tab-width) {
   .subscriptions {
     padding-top: 103px;
-    padding-bottom: 63px;
+    padding-bottom: 60px;
   }
 
   .subscriptions h2 {
@@ -203,23 +225,27 @@
   }
 
   .subscriptions__tariffes-item {
-    max-width: 442px;
-    padding: 64px 120px;
-    padding-bottom: 67px;
+    width: 442px;
+    padding-top: 56px;
+    padding-bottom: 52px;
     margin-right: 0;
     margin-bottom: 39px;
     box-sizing: border-box;
   }
 
-  .subscriptions__tariffes-item b {
-    left: 138px;
+  .subscriptions__price-wrapper {
+    transform: translateY(-56px);
+  }
+
+  .subscriptionss__tariffes-item b {
+    left: 131px;
   }
 }
 
 @media (max-width: $mob-width) {
   .subscriptions {
     padding-top: 70px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
   }
 
   .subscriptions h2 {
@@ -251,11 +277,9 @@
 
   .subscriptions__tariffes-item {
     width: 100%;
-    padding: 0;
-    padding-top: 51px;
-    padding-bottom: 54px;
+    padding: 44px 0;
     margin-right: 0;
-    margin-bottom: 39px;
+    margin-bottom: 35px;
     box-sizing: border-box;
   }
 
@@ -265,30 +289,36 @@
   }
 
   .subscriptions__tariffes-item p {
-    margin-bottom: 11px;
+    margin-bottom: 30px;
   }
 
-  .subscription__shadow-price {
-    margin-bottom: 24px;
+  .subscriptions__price-wrapper {
+    transform: translate(4px, -44px);
+  }
+
+  .subscriptions__shadow-price {
     font-size: 80px;
-    line-height: 120px;
+    line-height: 80px;
   }
 
   .subscriptions__tariffes-item b {
     font-size: 48px;
-    line-height: 72px;
-    top: 163px;
-    left: 81px;
+    line-height: 48px;
+    top: 156px;
+    left: 74px;
   }
 
-  .subscription__ruble {
-    padding-left: 9px;
+  .subscriptions__ruble {
+    padding-left: 7px;
     font-size: 48px;
-    line-height: 72px;
+    line-height: 48px;
   }
 
   .subscriptions__tariffes-item a {
-    width: 204px;
-    transform: translateX(41px);
+    padding-left: 0;
+    padding-right: 0;
+    width: 208px;
+    box-sizing: border-box;
+    transform: translateY(-3px);
   }
 }

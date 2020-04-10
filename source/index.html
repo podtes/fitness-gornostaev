@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Super Gym - фитнес центр</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preload" href="./fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/BebasNeue-Regular.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/BebasNeue-Bold.woff2" as="font" crossorigin="anonymous">
@@ -16,7 +18,6 @@
   <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/RobotoCondensed-Light.woff" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
   <div class="intro-header-wrapper">
@@ -67,30 +68,39 @@
     <section class="subscriptions">
       <h2>Абонементы</h2>
       <ul class="subscriptions__months-list">
-        <li class="subscriptions__months-item subscriptions__months-item--active">1 месяц</li>
-        <li class="subscriptions__months-item">6 месяцев</li>
-        <li class="subscriptions__months-item">12 месяцев</li>
+        <li class="subscriptions__months-item subscriptions__months-item--one-month subscriptions__months-item--active">1 месяц</li>
+        <li class="subscriptions__months-item subscriptions__months-item--six-month">6 месяцев</li>
+        <li class="subscriptions__months-item subscriptions__months-item--twelve-month">12 месяцев</li>
       </ul>
       <ul class="subscriptions__tariffes-list container">
-        <li class="subscriptions__tariffes-item">
+        <li class="subscriptions__tariffes-item subscriptions__tariffes-item--with-trainer">
           <h3>С тренером</h3>
           <p>12 занятий</p>
-          <span class="subscription__shadow-price">5000</span>
-          <b>5000<span class="subscription__ruble">₽</span></b>
+          <span class="subscriptions__shadow-price">5000</span>
+          <div class="subscriptions__price-wrapper">
+            <b>5000</b>
+            <span class="subscriptions__ruble">₽</span>
+          </div>
           <a href="#">купить абонемент</a>
         </li>
-        <li class="subscriptions__tariffes-item">
+        <li class="subscriptions__tariffes-item subscriptions__tariffes-item--daily">
           <h3>Дневной</h3>
           <p>c 8:00 до 17:00</p>
-          <span class="subscription__shadow-price">1700</span>
-          <b>1700<span class="subscription__ruble">₽</span></b>
+          <span class="subscriptions__shadow-price">1700</span>
+          <div class="subscriptions__price-wrapper">
+            <b>1700</b>
+            <span class="subscriptions__ruble">₽</span>
+          </div>
           <a href="#">купить абонемент</a>
         </li>
-        <li class="subscriptions__tariffes-item">
+        <li class="subscriptions__tariffes-item subscriptions__tariffes-item--fullday">
           <h3>Полный день</h3>
           <p>c 8:00 до 22:00</p>
-          <span class="subscription__shadow-price">2700</span>
-          <b>2700<span class="subscription__ruble">₽</span></b>
+          <span class="subscriptions__shadow-price">2700</span>
+          <div class="subscriptions__price-wrapper">
+            <b>2700</b>
+            <span class="subscriptions__ruble">₽</span>
+          </div>
           <a href="#">купить абонемент</a>
         </li>
       </ul>
@@ -108,15 +118,200 @@
               </div>
             </div>
             <div class="promo__time">
-          <span>Время</span>
-          <span>12:00</span>
-        </div>
+              <span>Время</span>
+              <span>12:00</span>
+            </div>
           </div>
         </div>
         <h2>Ежегодные соревнования по CrossFit</h2>
         <a href="#">Заполнить заявку</a>
       </div>
     </section>
+    <section class="trainers container">
+      <h2>Тренеры</h2>
+      <div id="trainers-swiper" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="trainers__card trainers__card--pavlova">
+              <h3>Анна Павлова</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>
+                  Certified Level 3 Trainer
+                </li>
+                <li>
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li>
+                  Опыт — 6 лет
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="trainers__card trainers__card--lavrov">
+              <h3>Алексей Лавров</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>
+                  Certified Level 3 Trainer
+                </li>
+                <li>
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li>
+                  Опыт — 6 лет
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="trainers__card trainers__card--pashkov">
+              <h3>Александр Пашков</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>
+                  Certified Level 3 Trainer
+                </li>
+                <li>
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li>
+                  Опыт — 6 лет
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="trainers__card trainers__card--ketova">
+              <h3>Мария Кетова</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>
+                  Certified Level 3 Trainer
+                </li>
+                <li>
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li>
+                  Опыт — 6 лет
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="trainers__card trainers__card--pavlova">
+              <h3>Анна Павлова</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>
+                  Certified Level 3 Trainer
+                </li>
+                <li>
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li>
+                  Опыт — 6 лет
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="trainers__card trainers__card--lavrov">
+              <h3>Алексей Лавров</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>
+                  Certified Level 3 Trainer
+                </li>
+                <li>
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li>
+                  Опыт — 6 лет
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="trainers__card trainers__card--pashkov">
+              <h3>Александр Пашков</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>
+                  Certified Level 3 Trainer
+                </li>
+                <li>
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li>
+                  Опыт — 6 лет
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="trainers__card trainers__card--ketova">
+              <h3>Мария Кетова</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>
+                  Certified Level 3 Trainer
+                </li>
+                <li>
+                  Победитель чемпионата России по CrossFit
+                </li>
+                <li>
+                  Опыт — 6 лет
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h2>Наши преимущества</h2>
+        <span>кв/м</span>
+        <h3>Площадь</h3>
+        <p>Занимайтесь без очередей и толпучки</p>
+        <span>машин</span>
+        <h3>Собственная парковка</h3>
+        <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+      </div>
+    </section>
+    <section class="discounts container">
+      <h2>Акции</h2>
+      <div class="discounts__wrapper">
+        <div class="discounts__card">
+          <h3>Год</h3>
+          <b>4999</b>
+          <p>Безлимитный абонемент в тренажерный зал</p>
+          <a href="#">Подробнее</a>
+        </div>
+        <div class="discounts__small-cards">
+          <div class="discounts__small-card-gradient-border">
+            <div class="discounts__small-card">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в подарок</p>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="discounts__small-card-gradient-border">
+            <div class="discounts__small-card">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с командой</p>
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <script src="./js/main.js"></script>
+  <script src="./js/vendor.js"></script>
 </body>
 </html>

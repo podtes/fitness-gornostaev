@@ -1,0 +1,247 @@
+.trainers {
+  padding-top: 21px;
+  padding-bottom: 119px;
+  background-color: #ffffff;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+.trainers h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  padding-left: 2px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.trainers h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.trainers p {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #b6bdcc;
+  display: none;
+}
+
+.trainers ul {
+  max-width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+.trainers li {
+  position: relative;
+  padding-left: 41px;
+  margin-bottom: 13px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    top: 7px;
+    left: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+}
+
+.trainers__card {
+  padding-top: 244px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 260px 294px;
+  cursor: pointer;
+
+  &--pavlova {
+    background-image: url("../img/trainer-pavlova-desk@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/trainer-pavlova-desk@2x.jpg");
+    }
+
+    &:hover {
+      background-image: linear-gradient(to top, rgba(16, 38, 84, 0.8), rgba(16, 38, 84, 0.8)),
+        url("../img/trainer-pavlova-desk@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: linear-gradient(to top, rgba(16, 38, 84, 0.8), rgba(16, 38, 84, 0.8)),
+          url("../img/trainer-pavlova-desk@2x.jpg");
+      }
+    }
+  }
+
+  &--lavrov {
+    background-image: url("../img/trainer-lavrov-desk@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/trainer-lavrov-desk@2x.jpg");
+    }
+
+    &:hover {
+      background-image: linear-gradient(to top, rgba(16, 38, 84, 0.8), rgba(16, 38, 84, 0.8)),
+        url("../img/trainer-lavrov-desk@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: linear-gradient(to top, rgba(16, 38, 84, 0.8), rgba(16, 38, 84, 0.8)),
+          url("../img/trainer-lavrov-desk@2x.jpg");
+      }
+    }
+  }
+
+  &--pashkov {
+    background-image: url("../img/trainer-pashkov-desk@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/trainer-pashkov-desk@2x.jpg");
+    }
+
+    &:hover {
+      background-image: linear-gradient(to top, rgba(16, 38, 84, 0.8), rgba(16, 38, 84, 0.8)),
+        url("../img/trainer-pashkov-desk@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: linear-gradient(to top, rgba(16, 38, 84, 0.8), rgba(16, 38, 84, 0.8)),
+          url("../img/trainer-pashkov-desk@2x.jpg");
+      }
+    }
+  }
+
+  &--ketova {
+    background-image: url("../img/trainer-ketova-desk@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/trainer-ketova-desk@2x.jpg");
+    }
+
+    &:hover {
+      background-image: linear-gradient(to top, rgba(16, 38, 84, 0.8), rgba(16, 38, 84, 0.8)),
+        url("../img/trainer-ketova-desk@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: linear-gradient(to top, rgba(16, 38, 84, 0.8), rgba(16, 38, 84, 0.8)),
+          url("../img/trainer-ketova-desk@2x.jpg");
+      }
+    }
+  }
+
+  &:hover {
+    padding-top: 51px;
+    padding-bottom: 52px;
+  }
+
+  &:hover > p {
+    display: block;
+  }
+
+  &:hover > ul {
+    display: block;
+  }
+}
+
+.trainers .swiper-button-next,
+.trainers .swiper-button-prev {
+  &::after {
+    content: "";
+    width: 16px;
+    height: 32px;
+    background: url("../img/slider-arrow.svg") no-repeat 50% 50%;
+  }
+}
+
+.trainers .swiper-button-next {
+  &::after {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: $tab-width) {
+  .trainers {
+    padding-top: 51px;
+    padding-bottom: 100px;
+    padding-left: 56px;
+    padding-right: 56px;
+    text-align: center;
+  }
+
+  .trainers h2 {
+    margin-bottom: 39px;
+    padding-left: 0;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .trainers__card {
+    padding-right: 9px;
+    background-size: 268px 294px;
+  }
+
+  .trainers__card ul {
+    text-align: left;
+  }
+}
+
+@media (max-width: $mob-width) {
+  .trainers {
+    padding-top: 60px;
+    padding-bottom: 69px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .trainers h2 {
+    margin-bottom: 42px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .trainers li {
+    padding-left: 37px;
+
+    &::before {
+      left: 21px;
+    }
+  }
+
+  .trainers__card {
+    padding-right: 0;
+    padding-bottom: 3px;
+    background-size: 226px 274px;
+
+    &:hover {
+      padding-top: 41px;
+    }
+  }
+}
