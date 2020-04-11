@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Smart Device - печатные платы">
@@ -67,43 +67,45 @@
     </section>
     <section class="subscriptions">
       <h2>Абонементы</h2>
-      <ul class="subscriptions__months-list">
-        <li class="subscriptions__months-item subscriptions__months-item--one-month subscriptions__months-item--active">1 месяц</li>
-        <li class="subscriptions__months-item subscriptions__months-item--six-month">6 месяцев</li>
-        <li class="subscriptions__months-item subscriptions__months-item--twelve-month">12 месяцев</li>
-      </ul>
-      <ul class="subscriptions__tariffes-list container">
-        <li class="subscriptions__tariffes-item subscriptions__tariffes-item--with-trainer">
-          <h3>С тренером</h3>
-          <p>12 занятий</p>
-          <span class="subscriptions__shadow-price">5000</span>
-          <div class="subscriptions__price-wrapper">
-            <b>5000</b>
-            <span class="subscriptions__ruble">₽</span>
-          </div>
-          <a href="#">купить абонемент</a>
-        </li>
-        <li class="subscriptions__tariffes-item subscriptions__tariffes-item--daily">
-          <h3>Дневной</h3>
-          <p>c 8:00 до 17:00</p>
-          <span class="subscriptions__shadow-price">1700</span>
-          <div class="subscriptions__price-wrapper">
-            <b>1700</b>
-            <span class="subscriptions__ruble">₽</span>
-          </div>
-          <a href="#">купить абонемент</a>
-        </li>
-        <li class="subscriptions__tariffes-item subscriptions__tariffes-item--fullday">
-          <h3>Полный день</h3>
-          <p>c 8:00 до 22:00</p>
-          <span class="subscriptions__shadow-price">2700</span>
-          <div class="subscriptions__price-wrapper">
-            <b>2700</b>
-            <span class="subscriptions__ruble">₽</span>
-          </div>
-          <a href="#">купить абонемент</a>
-        </li>
-      </ul>
+      <div class="subscriptions__bg-wrapper">
+        <ul class="subscriptions__months-list">
+          <li class="subscriptions__months-item subscriptions__months-item--one-month subscriptions__months-item--active">1 месяц</li>
+          <li class="subscriptions__months-item subscriptions__months-item--six-month">6 месяцев</li>
+          <li class="subscriptions__months-item subscriptions__months-item--twelve-month">12 месяцев</li>
+        </ul>
+        <ul class="subscriptions__tariffes-list container">
+          <li class="subscriptions__tariffes-item subscriptions__tariffes-item--with-trainer">
+            <h3>С тренером</h3>
+            <p>12 занятий</p>
+            <span class="subscriptions__shadow-price">5000</span>
+            <div class="subscriptions__price-wrapper">
+              <b>5000</b>
+              <span class="subscriptions__ruble">₽</span>
+            </div>
+            <a href="#">купить абонемент</a>
+          </li>
+          <li class="subscriptions__tariffes-item subscriptions__tariffes-item--daily">
+            <h3>Дневной</h3>
+            <p>c 8:00 до 17:00</p>
+            <span class="subscriptions__shadow-price">1700</span>
+            <div class="subscriptions__price-wrapper">
+              <b>1700</b>
+              <span class="subscriptions__ruble">₽</span>
+            </div>
+            <a href="#">купить абонемент</a>
+          </li>
+          <li class="subscriptions__tariffes-item subscriptions__tariffes-item--fullday">
+            <h3>Полный день</h3>
+            <p>c 8:00 до 22:00</p>
+            <span class="subscriptions__shadow-price">2700</span>
+            <div class="subscriptions__price-wrapper">
+              <b>2700</b>
+              <span class="subscriptions__ruble">₽</span>
+            </div>
+            <a href="#">купить абонемент</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="promo">
       <div class="promo__card container">
@@ -341,14 +343,14 @@
         </div>
         <div class="discounts__small-cards">
           <div class="discounts__small-card-gradient-border">
-            <div class="discounts__small-card">
+            <div class="discounts__small-card discounts__small-card--left">
               <h3>Месяц бесплатно</h3>
               <p>Приведи друга, получи абонемент в подарок</p>
               <a href="#">Подробнее</a>
             </div>
           </div>
           <div class="discounts__small-card-gradient-border">
-            <div class="discounts__small-card">
+            <div class="discounts__small-card discounts__small-card--right">
               <h3>Скидка 20%</h3>
               <p>Корпоративный фитнес с командой</p>
               <a href="#">Подробнее</a>
@@ -357,6 +359,107 @@
         </div>
       </div>
     </section>
+    <section class="feedbacks container">
+      <h2>Отзывы</h2>
+      <div id="feedbacks-swiper" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="feedbacks__card">
+              <h3>Анна Орлова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="feedbacks__card">
+              <h3>Анна Воробушкина</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <div class="lesson-contacts-wrapper">
+      <section class="free-lesson">
+        <h2>Бесплатное занятие</h2>
+        <form autocomplete="off">
+          <label aria-label="Имя">
+            <input type="text" name="name" placeholder="Имя" required="">
+          </label>
+          <label aria-label="Телефон">
+            <input type="tel" name="telephone" placeholder="Телефон" required="">
+          </label>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__two-text-wrapper">
+            <div class="contacts__text-wrapper">
+            <span>Адрес:</span>
+            <p>г. Омск, ул. 60 лет Октября, 7</p>
+          </div>
+            <div class="contacts__text-wrapper">
+            <span>График работы:</span>
+            <p>Пн-Вс: с 8:00 до 22:00</p>
+          </div>
+          </div>
+          <div class="contacts__two-text-wrapper">
+            <div class="contacts__text-wrapper">
+            <span>Телефон:</span>
+            <a href="tel:88005555555">8-800-555-55-55</a>
+          </div>
+            <div class="contacts__text-wrapper">
+            <span>Email:</span>
+            <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__img-sections-wrapper">
+          <a class="page-footer__logo" href="#">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/logo-mob@1x.png 1x, ./img/logo-mob@2x.png 2x">
+              <source media="(max-width: 1199px)" srcset="./img/logo-tab@1x.png 1x, ./img/logo-tab@2x.png 2x">
+              <img src="./img/logo-desktop@1x.png" srcset="./img/logo-desktop@2x.png 2x" alt="логотоп компании Super Gym" class="page-footer__logo-img" width="87" height="20">
+            </picture>
+          </a>
+          <a class="page-footer__section-link page-footer__section-link--services" href="#">Услуги</a>
+          <a class="page-footer__section-link page-footer__section-link--subs" href="#">Абонементы</a>
+          <a class="page-footer__section-link page-footer__section-link--discounts" href="#">Акции</a>
+          <a class="page-footer__section-link page-footer__section-link--trainers" href="#">Тренеры</a>
+          <a class="page-footer__section-link page-footer__section-link--schedule" href="#">Расписание</a>
+        </div>
+        <ul class="page-footer__social-list">
+        <li>
+          <a href="#">Наш вконтакте
+            <svg class="page-footer__icon-vk" width="24" height="13">
+              <use xlink:href="./img/sprite_auto.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">Наш инстаграм
+            <svg class="page-footer__icon-insta" width="24" height="24">
+              <use xlink:href="./img/sprite_auto.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">Наш фейсбук
+            <svg class="page-footer__icon-fb" width="12" height="24">
+              <use xlink:href="./img/sprite_auto.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      </div>
+    </footer>
   </main>
   <script src="./js/main.js"></script>
   <script src="./js/vendor.js"></script>

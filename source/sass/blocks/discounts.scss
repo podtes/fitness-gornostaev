@@ -202,9 +202,14 @@
     width: 324px;
   }
 
-  .discounts__small-card {
+  .discounts__small-card--left {
     padding-bottom: 25px;
     padding-right: 80px;
+  }
+
+  .discounts__small-card--right {
+    padding-bottom: 25px;
+    padding-right: 20px;
   }
 
   .discounts__small-card h3 {
@@ -213,6 +218,10 @@
 
   .discounts__small-card p {
     margin-bottom: 46px;
+  }
+
+  .discounts__small-card--right p {
+    margin-bottom: 68px;
   }
 }
 

@@ -1,0 +1,207 @@
+.page-footer {
+  padding-top: 45px;
+  padding-bottom: 32px;
+  padding-left: 103px;
+  padding-right: 103px;
+  background-color: #030a1a;
+  color: #ffffff;
+}
+
+.page-footer__wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-footer__img-sections-wrapper {
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-footer__logo {
+  margin-right: 279px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(-2px);
+}
+
+.page-footer__section-link {
+  margin-right: 40px;
+  cursor: pointer;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.page-footer__social-list li {
+  margin-right: 25px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.page-footer__social-list a {
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: $tab-width) {
+  .page-footer {
+    padding-top: 48px;
+    padding-bottom: 35px;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .page-footer__wrapper {
+    max-width: 768px;
+  }
+
+  .page-footer__logo {
+    margin-right: 63px;
+  }
+
+  .page-footer__logo-img {
+    width: 82px;
+    height: 17px;
+  }
+
+  .page-footer__section-link {
+    margin-right: 30px;
+  }
+
+  .page-footer__social-list li {
+    margin-right: 21px;
+  }
+}
+
+@media (max-width: $mob-width) {
+  .page-footer {
+    padding-top: 50px;
+    padding-bottom: 43px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page-footer__wrapper {
+    max-width: 320px;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .page-footer__img-sections-wrapper {
+    margin-bottom: 13px;
+    width: 100%;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+
+  .page-footer__logo {
+    margin-right: 0;
+    display: inline-block;
+    margin-bottom: 16px;
+    width: 55%;
+  }
+
+  .page-footer__logo-img {
+    width: 68px;
+    height: 15px;
+  }
+
+  .page-footer__section-link {
+    margin-right: 0;
+    margin-bottom: 21px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .page-footer__section-link--discounts {
+    width: 45%;
+    order: 1;
+  }
+
+  .page-footer__section-link--services {
+    width: 55%;
+    order: 2;
+  }
+
+  .page-footer__section-link--trainers {
+    width: 45%;
+    order: 3;
+  }
+
+  .page-footer__section-link--subs {
+    width: 55%;
+    order: 4;
+  }
+
+  .page-footer__section-link--schedule {
+    width: 45%;
+    order: 5;
+  }
+
+  .page-footer__social-list {
+    transform: translateY(0);
+  }
+
+  .page-footer__social-list li {
+    margin-right: 35px;
+  }
+
+  .page-footer__icon-vk {
+    width: 32px;
+    height: 17px;
+    transform: translateY(5px);
+  }
+
+  .page-footer__icon-insta {
+    width: 27px;
+    height: 27px;
+  }
+
+  .page-footer__icon-fb {
+    width: 14px;
+    height: 27px;
+  }
+}

@@ -1,9 +1,25 @@
 .subscriptions {
   padding-top: 122px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   background-color: #f8f9fc;
   color: #000000;
   text-align: center;
+}
+
+.subscriptions__bg-wrapper {
+  position: relative;
+  max-width: 1550px;
+  margin: 0 auto;
+  padding-bottom: 170px;
+  background-color: transparent;
+  background-image: url("../img/weights-desk@1x.png");
+  background-repeat: no-repeat;
+  background-position: 1123px bottom;
+  background-size: 382px 333px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/weights-desk@2x.png");
+  }
 }
 
 .subscriptions h2 {
@@ -198,6 +214,19 @@
     padding-bottom: 60px;
   }
 
+  .subscriptions__bg-wrapper {
+    position: relative;
+    max-width: 1199px;
+    padding-bottom: 188px;
+    background-image: url("../img/weights-tab@1x.png");
+    background-position: 422px bottom;
+    background-size: 423px 444px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/weights-tab@2x.png");
+    }
+  }
+
   .subscriptions h2 {
     margin-bottom: 26px;
     font-size: 42px;
@@ -248,6 +277,17 @@
     padding-bottom: 35px;
   }
 
+  .subscriptions__bg-wrapper {
+    position: static;
+    max-width: none;
+    padding-bottom: 0;
+    background-image: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
+    }
+  }
+
   .subscriptions h2 {
     margin-bottom: 21px;
     font-size: 32px;
@@ -266,7 +306,6 @@
 
     &::before {
       bottom: -14px;
-      //TODO: не совпадает по макету, но мне кажется проблема с макетом, на других разрешениях нижняя граница активного элемента совпадает по ширине с надписью
     }
   }
 

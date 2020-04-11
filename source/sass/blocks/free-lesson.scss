@@ -1,0 +1,153 @@
+.lesson-contacts-wrapper {
+  margin: 0 auto;
+  max-width: 1366px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.free-lesson {
+  padding-left: 103px;
+  padding-top: 70px;
+  padding-bottom: 69px;
+  background-color: #102654;
+  color: #ffffff;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.free-lesson h2 {
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.free-lesson input {
+  width: 188px;
+  padding-bottom: 6px;
+  margin-bottom: 28px;
+  background-color: transparent;
+  border: none;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  border-bottom: 2px solid #74819c;
+  -webkit-tap-highlight-color: transparent;
+
+  &::placeholder {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+}
+
+.free-lesson label {
+  &:first-of-type {
+    margin-right: 27px;
+  }
+}
+
+.free-lesson button {
+  padding: 16px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  width: 411px;
+  box-sizing: border-box;
+  background-color: #102654;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: $tab-width) {
+  .lesson-contacts-wrapper {
+    width: 768px;
+    flex-direction: column;
+  }
+
+  .free-lesson {
+    padding-left: 132px;
+    padding-top: 72px;
+    padding-bottom: 68px;
+    width: 100%;
+  }
+
+  .free-lesson h2 {
+    margin-bottom: 33px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .free-lesson input {
+    width: 205px;
+  }
+
+  .free-lesson label {
+    &:first-of-type {
+      margin-right: 57px;
+    }
+  }
+
+  .free-lesson button {
+    width: 475px;
+  }
+}
+
+@media (max-width: $mob-width) {
+  .lesson-contacts-wrapper {
+    width: 320px;
+  }
+
+  .free-lesson {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 70px;
+  }
+
+  .free-lesson h2 {
+    margin-bottom: 37px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .free-lesson input {
+    margin-bottom: 0;
+    width: 290px;
+  }
+
+  .free-lesson label {
+    display: block;
+
+    &:first-of-type {
+      margin-right: 0;
+      margin-bottom: 34px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 38px;
+    }
+  }
+
+  .free-lesson button {
+    width: 290px;
+  }
+}

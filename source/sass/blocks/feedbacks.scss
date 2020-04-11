@@ -1,0 +1,167 @@
+.feedbacks {
+  padding-top: 21px;
+  padding-bottom: 120px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.feedbacks h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.feedbacks__card {
+  padding-left: 170px;
+  padding-top: 54px;
+  padding-right: 60px;
+  padding-bottom: 58px;
+  margin: 0 auto;
+  text-align: left;
+  width: 560px;
+  background-color: #1c3374;
+  box-sizing: border-box;
+  background-image: url("../img/feedback-ava-desk@1x.png");
+  background-repeat: no-repeat;
+  background-position: 62px 62px;
+  background-size: 80px 80px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/feedback-ava-desk@2x.png");
+  }
+}
+
+.feedbacks__card h3 {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.feedbacks__card p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.feedbacks .swiper-button-next,
+.feedbacks .swiper-button-prev {
+  &::after {
+    content: "";
+    width: 16px;
+    height: 32px;
+    background: url("../img/slider-arrow-desk.png") no-repeat 50% 50%;
+  }
+}
+
+.feedbacks .swiper-button-prev {
+  left: 238px;
+}
+
+.feedbacks .swiper-button-next {
+  left: 894px;
+
+  &::after {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: $tab-width) {
+  .feedbacks {
+    padding-top: 51px;
+    padding-bottom: 100px;
+  }
+
+  .feedbacks h2 {
+    margin-bottom: 39px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .feedbacks__card {
+    padding-left: 173px;
+    padding-right: 63px;
+    width: 566px;
+    background-position: 65px 62px;
+  }
+
+  .feedbacks .swiper-button-prev {
+    left: -6px;
+  }
+
+  .feedbacks .swiper-button-next {
+    left: 656px;
+  }
+}
+
+@media (max-width: $mob-width) {
+  .feedbacks {
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+
+  .feedbacks h2 {
+    margin-bottom: 42px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .feedbacks__card {
+    padding-top: 48px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 35px;
+    width: 226px;
+    background-image: url("../img/feedback-ava-mob@1x.png");
+    background-position: 41px 40px;
+    background-size: 68px 68px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/feedback-ava-mob@2x.png");
+    }
+  }
+
+  .feedbacks__card h3 {
+    padding-left: 99px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 70px;
+  }
+
+  .feedbacks__card p {
+    text-align: center;
+  }
+
+  .feedbacks .swiper-button-next,
+  .feedbacks .swiper-button-prev {
+    &::after {
+      content: "";
+      width: 15px;
+      height: 19px;
+      background: url("../img/slider-arrow-mob.png") no-repeat 50% 50%;
+    }
+  }
+
+  .feedbacks .swiper-button-prev {
+    left: -8px;
+  }
+
+  .feedbacks .swiper-button-next {
+    left: 271px;
+  }
+}

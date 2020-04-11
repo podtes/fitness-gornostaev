@@ -177,7 +177,7 @@
     content: "";
     width: 16px;
     height: 32px;
-    background: url("../img/slider-arrow.svg") no-repeat 50% 50%;
+    background: url("../img/slider-arrow-desk.png") no-repeat 50% 50%;
   }
 }
 
@@ -242,6 +242,7 @@
 
     &:hover {
       padding-top: 41px;
+      padding-bottom: 42px;
     }
   }
 }

@@ -8664,6 +8664,7 @@
 'use strict';
 
 (function () {
+// свайпер секции с тренерами
   if (window.main.getWindowWidth() < 768) {
     return new window.Swiper('#trainers-swiper.swiper-container', {
       slidesPerView: 1,
@@ -8698,3 +8699,13 @@
   }
 })();
 
+(function () {
+  return new window.Swiper('#feedbacks-swiper.swiper-container', {
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+})();
