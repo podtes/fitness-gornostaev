@@ -8678,6 +8678,7 @@
     if (window.main.getWindowWidth() < 1200) {
       return new window.Swiper('#trainers-swiper.swiper-container', {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetween: 30,
         loop: false,
         navigation: {
@@ -8688,6 +8689,7 @@
     } else {
       return new window.Swiper('#trainers-swiper.swiper-container', {
         slidesPerView: 4,
+        slidesPerGroup: 4,
         spaceBetween: 40,
         loop: false,
         navigation: {

@@ -1,4 +1,5 @@
 .trainers {
+  position: relative;
   padding-top: 21px;
   padding-bottom: 119px;
   background-color: #ffffff;
@@ -185,11 +186,11 @@
 }
 
 .trainers .swiper-button-prev {
-  left: 0;
+  left: -63px;
 }
 
 .trainers .swiper-button-next {
-  right: 0;
+  right: -60px;
 
   &::after {
     transform: rotate(180deg);
@@ -219,6 +220,24 @@
 
   .trainers__card ul {
     text-align: left;
+  }
+
+  .trainers .swiper-button-next,
+  .trainers .swiper-button-prev {
+    &::after {
+      width: 16px;
+      height: 32px;
+    }
+  }
+
+  .trainers .swiper-button-prev {
+    left: -7px;
+    top: 280px;
+  }
+
+  .trainers .swiper-button-next {
+    top: 279px;
+    right: -5px;
   }
 }
 
@@ -253,5 +272,23 @@
       padding-top: 41px;
       padding-bottom: 42px;
     }
+  }
+
+  .trainers .swiper-button-next,
+  .trainers .swiper-button-prev {
+    &::after {
+      width: 19px;
+      height: 20px;
+    }
+  }
+
+  .trainers .swiper-button-prev {
+    left: -7px;
+    top: 272px;
+  }
+
+  .trainers .swiper-button-next {
+    top: 272px;
+    right: -6px;
   }
 }
