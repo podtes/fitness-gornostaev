@@ -18,7 +18,7 @@ var del = require("del");
 var concat = require("gulp-concat");
 
 gulp.task("scripts", function () {
-  return gulp.src(["./node_modules/swiper/js/swiper.js", "./source/js/swipers.js"])
+  return gulp.src(["./node_modules/swiper/js/swiper.js", "./source/js/swipers.js", "./node_modules/svgxuse/svgxuse.js"])
     .pipe(concat("vendor.js"))
     .pipe(gulp.dest("./build/js"));
 });
@@ -92,7 +92,8 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+    "source/js/main.js",
+    "source/js/vendor.js",
     "source//*.ico"
     ], {
       base: "source"

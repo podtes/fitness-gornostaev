@@ -5,7 +5,7 @@
   if (window.main.getWindowWidth() < 768) {
     return new window.Swiper('#trainers-swiper.swiper-container', {
       slidesPerView: 1,
-      loop: true,
+      loop: false,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -16,7 +16,7 @@
       return new window.Swiper('#trainers-swiper.swiper-container', {
         slidesPerView: 2,
         spaceBetween: 30,
-        loop: true,
+        loop: false,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -26,7 +26,7 @@
       return new window.Swiper('#trainers-swiper.swiper-container', {
         slidesPerView: 4,
         spaceBetween: 40,
-        loop: true,
+        loop: false,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',

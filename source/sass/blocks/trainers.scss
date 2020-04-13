@@ -11,6 +11,7 @@
   margin-bottom: 50px;
   padding: 0;
   padding-left: 2px;
+  display: block;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-weight: bold;
   font-size: 49px;
@@ -74,8 +75,10 @@
 }
 
 .trainers__card {
+  margin: 0;
   padding-top: 244px;
   padding-bottom: 24px;
+  width: 260px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -181,7 +184,13 @@
   }
 }
 
+.trainers .swiper-button-prev {
+  left: 0;
+}
+
 .trainers .swiper-button-next {
+  right: 0;
+
   &::after {
     transform: rotate(180deg);
   }

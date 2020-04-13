@@ -53,6 +53,7 @@
   "dependencies": {
     "concat": "^1.0.3",
     "del": "^4.1.1",
+    "svgxuse": "^1.2.6",
     "swiper": "^5.3.6"
   }
 }
