@@ -15,6 +15,10 @@ var thursday = document.querySelector('.schedule__thursday');
 var friday = document.querySelector('.schedule__friday');
 var saturday = document.querySelector('.schedule__saturday');
 var sunday = document.querySelector('.schedule__sunday');
+var translateDaysWrapper = document.querySelector('.schedule__days-translate-wrapper');
+var scheduleWrapper = document.querySelector('.schedule__wrapper');
+var scheduleButton = scheduleWrapper.querySelector('.schedule__button');
+var scheduleDays = scheduleWrapper.querySelectorAll('.schedule__day');
 
 var trainerCard = document.querySelector('.subscriptions__tariffes-item--with-trainer');
 var dailyCard = document.querySelector('.subscriptions__tariffes-item--daily');
@@ -78,9 +82,7 @@ var switchExercizeActiveClass = function (exercize) {
     exercize.classList.toggle('schedule__exerсize--active');
   });
 };
-
 var hoverActiveExercize = function (exercize) {
-
   exercize.addEventListener('mouseenter', function () {
     if (exercize.classList.contains('schedule__exerсize--monday')) {
       monday.style.background = '#ed0233';
@@ -95,7 +97,6 @@ var hoverActiveExercize = function (exercize) {
       monday.style.color = '#1c3374';
     }
   });
-
   exercize.addEventListener('mouseenter', function () {
     if (exercize.classList.contains('schedule__exerсize--tuesday')) {
       tuesday.style.background = '#ed0233';
@@ -110,7 +111,6 @@ var hoverActiveExercize = function (exercize) {
       tuesday.style.color = '#1c3374';
     }
   });
-
   exercize.addEventListener('mouseenter', function () {
     if (exercize.classList.contains('schedule__exerсize--wednesday')) {
       wednesday.style.background = '#ed0233';
@@ -125,7 +125,6 @@ var hoverActiveExercize = function (exercize) {
       wednesday.style.color = '#1c3374';
     }
   });
-
   exercize.addEventListener('mouseenter', function () {
     if (exercize.classList.contains('schedule__exerсize--thursday')) {
       thursday.style.background = '#ed0233';
@@ -140,7 +139,6 @@ var hoverActiveExercize = function (exercize) {
       thursday.style.color = '#1c3374';
     }
   });
-
   exercize.addEventListener('mouseenter', function () {
     if (exercize.classList.contains('schedule__exerсize--friday')) {
       friday.style.background = '#ed0233';
@@ -155,7 +153,6 @@ var hoverActiveExercize = function (exercize) {
       friday.style.color = '#1c3374';
     }
   });
-
   exercize.addEventListener('mouseenter', function () {
     if (exercize.classList.contains('schedule__exerсize--saturday')) {
       saturday.style.background = '#ed0233';
@@ -170,7 +167,6 @@ var hoverActiveExercize = function (exercize) {
       saturday.style.color = '#1c3374';
     }
   });
-
   exercize.addEventListener('mouseenter', function () {
     if (exercize.classList.contains('schedule__exerсize--sunday')) {
       sunday.style.background = '#ed0233';
@@ -241,9 +237,8 @@ var hoverActiveExercize = function (exercize) {
       time20Oclock.style.border = '2px solid #1c3374';
       time20Oclock.style.color = '#1c3374';
     }
-  })
+  });
 };
-
 var addListenersToExercizes = function () {
   if (exercizes) {
     for (var i = 0; i < exercizes.length; i++) {
@@ -252,7 +247,69 @@ var addListenersToExercizes = function () {
     }
   }
 };
+var swipeTabletSchedule = function () {
+  var initialPoint;
+  var finalPoint;
+  document.addEventListener('touchstart', function (evt) {
+    evt.stopPropagation();
+    initialPoint = evt.changedTouches[0];
+  }, false);
+  document.addEventListener('touchend', function (evt) {
+    evt.stopPropagation();
+    finalPoint = evt.changedTouches[0];
+    var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
+    if (xAbs > 20) {
+      if (finalPoint.pageX < initialPoint.pageX) {
+        translateDaysWrapper.style.transform = 'translateX(-459px)';
+        scheduleWrapper.classList.add('schedule__wrapper--swiped-left');
+      } else {
+        translateDaysWrapper.style.transform = 'translateX(0)';
+        scheduleWrapper.classList.remove('schedule__wrapper--swiped-left');
+      }
+    }
+  }, false);
+};
 
+// расписание мобильное
+var removeFirstDayClass = function () {
+  if (scheduleDays) {
+    for (var j = 0; j < scheduleDays.length; j++) {
+      if (scheduleDays[j].classList.contains('schedule__day--first')) {
+        scheduleDays[j].classList.remove('schedule__day--first');
+        break;
+      }
+    }
+  }
+};
+var selectRightDayAndCloseDaysList = function () {
+  if (scheduleDays) {
+    for (var i = 0; i < scheduleDays.length; i++) {
+      scheduleDays[i].addEventListener('click', function (evt) {
+        removeFirstDayClass();
+        evt.target.parentElement.classList.add('schedule__day--first');
+        scheduleButton.classList.remove('schedule__button--on');
+        translateDaysWrapper.classList.remove('schedule__days-translate-wrapper--open');
+      });
+    }
+  }
+};
+var openDaysList = function () {
+  if (scheduleButton && translateDaysWrapper) {
+    scheduleButton.classList.toggle('schedule__button--on');
+    translateDaysWrapper.classList.toggle('schedule__days-translate-wrapper--open');
+  }
+};
+var scheduleButtonClickHandler = function () {
+  openDaysList();
+  selectRightDayAndCloseDaysList();
+};
+
+if (getWindowWidth() < 1199 && getWindowWidth() > 767) {
+  swipeTabletSchedule();
+}
+if (getWindowWidth() < 767) {
+  scheduleButton.addEventListener('click', scheduleButtonClickHandler);
+}
 addListenersToExercizes();
 
 window.main = {
