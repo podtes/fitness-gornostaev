@@ -1,41 +1,32 @@
 'use strict';
 
 (function () {
-// свайпер секции с тренерами
-  if (window.main.getWindowWidth() < 768) {
-    return new window.Swiper('#trainers-swiper.swiper-container', {
-      slidesPerView: 1,
-      loop: false,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+  return new window.Swiper('#trainers-swiper.swiper-container', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 0,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0
       },
-    });
-  } else {
-    if (window.main.getWindowWidth() < 1200) {
-      return new window.Swiper('#trainers-swiper.swiper-container', {
+      768: {
         slidesPerView: 2,
         slidesPerGroup: 2,
-        spaceBetween: 30,
-        loop: false,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    } else {
-      return new window.Swiper('#trainers-swiper.swiper-container', {
+        spaceBetween: 30
+      },
+      1200: {
         slidesPerView: 4,
         slidesPerGroup: 4,
-        spaceBetween: 40,
-        loop: false,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
+        spaceBetween: 40
+      }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     }
-  }
+  });
 })();
 
 (function () {

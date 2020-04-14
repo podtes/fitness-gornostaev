@@ -1,5 +1,4 @@
 .trainers {
-  position: relative;
   padding-top: 21px;
   padding-bottom: 119px;
   background-color: #ffffff;
@@ -8,7 +7,6 @@
 }
 
 .trainers h2 {
-  margin: 0;
   margin-bottom: 50px;
   padding: 0;
   padding-left: 2px;
@@ -175,6 +173,12 @@
   }
 }
 
+.trainers__arrows-wrapper {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .trainers .swiper-button-next,
 .trainers .swiper-button-prev {
   &::after {
@@ -186,14 +190,29 @@
 }
 
 .trainers .swiper-button-prev {
-  left: -63px;
+  left: 0;
 }
 
 .trainers .swiper-button-next {
-  right: -60px;
+  right: 0;
 
   &::after {
     transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 1220px) {
+  .trainers .swiper-button-next,
+  .trainers .swiper-button-prev {
+    top: 350px;
+  }
+
+  .trainers .swiper-button-prev {
+    left: 45%;
+  }
+
+  .trainers .swiper-button-next {
+    right: 45%;
   }
 }
 
