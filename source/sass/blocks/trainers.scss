@@ -173,6 +173,11 @@
   }
 }
 
+.trainers .swiper-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
 .trainers__arrows-wrapper {
   position: relative;
   max-width: 1280px;
@@ -220,8 +225,6 @@
   .trainers {
     padding-top: 51px;
     padding-bottom: 100px;
-    padding-left: 56px;
-    padding-right: 56px;
     text-align: center;
   }
 
@@ -232,13 +235,22 @@
     line-height: 42px;
   }
 
+  .trainers .swiper-container {
+    max-width: 566px;
+    margin: 0 auto;
+  }
+
   .trainers__card {
-    padding-right: 9px;
+    width: 268px;
     background-size: 268px 294px;
   }
 
   .trainers__card ul {
     text-align: left;
+  }
+
+  .trainers__arrows-wrapper {
+    max-width: 768px;
   }
 
   .trainers .swiper-button-next,
@@ -250,13 +262,13 @@
   }
 
   .trainers .swiper-button-prev {
-    left: -7px;
-    top: 280px;
+    left: 40px;
+    top: 50%;
   }
 
   .trainers .swiper-button-next {
-    top: 279px;
-    right: -5px;
+    top: 50%;
+    right: 40px;
   }
 }
 
@@ -264,8 +276,6 @@
   .trainers {
     padding-top: 60px;
     padding-bottom: 69px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
 
   .trainers h2 {
@@ -282,15 +292,24 @@
     }
   }
 
+  .trainers .swiper-container {
+    max-width: 226px;
+  }
+
   .trainers__card {
     padding-right: 0;
     padding-bottom: 3px;
+    width: 226px;
     background-size: 226px 274px;
 
     &:hover {
       padding-top: 41px;
       padding-bottom: 42px;
     }
+  }
+
+  .trainers__arrows-wrapper {
+    max-width: 320px;
   }
 
   .trainers .swiper-button-next,
@@ -302,12 +321,10 @@
   }
 
   .trainers .swiper-button-prev {
-    left: -7px;
-    top: 272px;
+    left: 9px;
   }
 
   .trainers .swiper-button-next {
-    top: 272px;
-    right: -6px;
+    right: 9px;
   }
 }
