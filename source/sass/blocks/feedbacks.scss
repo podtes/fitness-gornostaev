@@ -58,6 +58,12 @@
   color: #ffffff;
 }
 
+.feedbacks__arrow-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .feedbacks .swiper-button-next,
 .feedbacks .swiper-button-prev {
   &::after {
@@ -69,11 +75,13 @@
 }
 
 .feedbacks .swiper-button-prev {
-  left: 238px;
+  left: 259px;
+  top: -124px;
 }
 
 .feedbacks .swiper-button-next {
-  left: 894px;
+  right: 259px;
+  top: -124px;
 
   &::after {
     transform: rotate(180deg);
@@ -99,12 +107,80 @@
     background-position: 65px 62px;
   }
 
+  .feedbacks__arrow-wrapper {
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
   .feedbacks .swiper-button-prev {
-    left: -6px;
+    left: 40px;
+    top: -121px;
   }
 
   .feedbacks .swiper-button-next {
-    left: 656px;
+    right: 40px;
+    top: -121px;
+  }
+}
+
+@media (max-width: 767px) {
+  .feedbacks .swiper-button-next {
+    right: 6px;
+    top: -121px;
+  }
+
+  .feedbacks .swiper-button-prev {
+    left: 6px;
+    top: -121px;
+  }
+}
+
+@media (max-width: 561px) {
+  .feedbacks .swiper-button-next {
+    right: 6px;
+    top: -130px;
+  }
+
+  .feedbacks .swiper-button-prev {
+    left: 6px;
+    top: -130px;
+  }
+}
+
+@media (max-width: 471px) {
+  .feedbacks .swiper-button-next {
+    right: 6px;
+    top: -138px;
+  }
+
+  .feedbacks .swiper-button-prev {
+    left: 6px;
+    top: -138px;
+  }
+}
+
+@media (max-width: 396px) {
+  .feedbacks .swiper-button-next {
+    right: 6px;
+    top: -150px;
+  }
+
+  .feedbacks .swiper-button-prev {
+    left: 6px;
+    top: -150px;
+  }
+}
+
+@media (max-width: 343px) {
+  .feedbacks .swiper-button-next {
+    right: 6px;
+    top: -168px;
+  }
+
+  .feedbacks .swiper-button-prev {
+    left: 6px;
+    top: -168px;
   }
 }
 
@@ -125,7 +201,7 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 35px;
-    width: 226px;
+    width: calc(100% - 94px);
     background-image: url("../img/feedback-ava-mob@1x.png");
     background-position: 41px 40px;
     background-size: 68px 68px;
@@ -155,13 +231,5 @@
       height: 19px;
       background: url("../img/slider-arrow-mob.png") no-repeat 50% 50%;
     }
-  }
-
-  .feedbacks .swiper-button-prev {
-    left: -8px;
-  }
-
-  .feedbacks .swiper-button-next {
-    left: 271px;
   }
 }

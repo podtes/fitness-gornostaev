@@ -24,8 +24,11 @@
     <header class="page-header container">
       <a class="page-header__logo" href="#">
         <picture>
+          <!-- 1x: 67px; 2x: 134px        -->
           <source media="(max-width: 767px)" srcset="./img/logo-mob@1x.png 1x, ./img/logo-mob@2x.png 2x">
+          <!-- 1x: 80px; 2x: 159px        -->
           <source media="(max-width: 1199px)" srcset="./img/logo-tab@1x.png 1x, ./img/logo-tab@2x.png 2x">
+          <!-- 1x: 87px; 2x: 174px        -->
           <img src="./img/logo-desktop@1x.png" srcset="./img/logo-desktop@2x.png 2x" alt="логотоп компании Super Gym" class="page-header__logo-img" width="87" height="20">
         </picture>
       </a>
@@ -63,6 +66,9 @@
         <b>Просторный зал площадью 900 кв/м</b>
         <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
         <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        <div class="gym__video-wrapper">
+          <button type="button">play</button>
+        </div>
       </div>
     </section>
     <section id="subscription-section" class="subscriptions">
@@ -282,8 +288,11 @@
         <div class="advantages__cards-wrapper">
           <div class="advantages__card advantages__card--square">
             <picture>
+              <!-- 1x: 89px; 2x: 178px        -->
               <source media="(max-width: 767px)" srcset="./img/900-mob@1x.png 1x, ./img/900-mob@2x.png 2x">
+              <!-- 1x: 89px; 2x: 178px        -->
               <source media="(max-width: 1199px)" srcset="./img/900-tab@1x.png 1x, ./img/900-tab@2x.png 2x">
+              <!-- 1x: 108px; 2x: 216px        -->
               <img src="./img/900-desk@1x.png" srcset="./img/900-desk@2x.png 2x" alt="900 квадратных метров" width="108" height="75">
             </picture>
             <div class="advantages__text-wrapper">
@@ -293,8 +302,11 @@
           </div>
           <div class="advantages__card advantages__card--parking">
             <picture>
+              <!-- 1x: 59px; 2x: 118px        -->
               <source media="(max-width: 767px)" srcset="./img/70-mob@1x.png 1x, ./img/70-mob@2x.png 2x">
+              <!-- 1x: 59px; 2x: 118px        -->
               <source media="(max-width: 1199px)" srcset="./img/70-tab@1x.png 1x, ./img/70-tab@2x.png 2x">
+              <!-- 1x: 72px; 2x: 144px        -->
               <img src="./img/70-desk@1x.png" srcset="./img/70-desk@2x.png 2x" alt="70 мест на паркинге" width="72" height="75">
             </picture>
             <div class="advantages__text-wrapper">
@@ -311,8 +323,11 @@
         <div class="advantages__cards-wrapper">
           <div class="advantages__card advantages__card--comfort">
             <picture>
+              <!-- 1x: 89px; 2x: 178px        -->
               <source media="(max-width: 767px)" srcset="./img/350-mob@1x.png 1x, ./img/350-mob@2x.png 2x">
+              <!-- 1x: 89px; 2x: 178px        -->
               <source media="(max-width: 1199px)" srcset="./img/350-tab@1x.png 1x, ./img/350-tab@2x.png 2x">
+              <!-- 1x: 108px; 2x: 216px        -->
               <img src="./img/350-desk@1x.png" srcset="./img/350-desk@2x.png 2x" alt="350 мест" width="108" height="75">
             </picture>
             <div class="advantages__text-wrapper">
@@ -322,8 +337,11 @@
           </div>
           <div class="advantages__card advantages__card--exp">
             <picture>
+              <!-- 1x: 57px; 2x: 114px        -->
               <source media="(max-width: 767px)" srcset="./img/5-mob@1x.png 1x, ./img/5-mob@2x.png 2x">
+              <!-- 1x: 57px; 2x: 14px        -->
               <source media="(max-width: 1199px)" srcset="./img/5-tab@1x.png 1x, ./img/5-tab@2x.png 2x">
+              <!-- 1x: 70px; 2x: 140px        -->
               <img src="./img/5-desk@1x.png" srcset="./img/5-desk@2x.png 2x" alt="5 лет опыта" width="70" height="74">
             </picture>
             <div class="advantages__text-wrapper">
@@ -361,7 +379,7 @@
         </div>
       </div>
     </section>
-    <section class="feedbacks container">
+    <section class="feedbacks">
       <h2>Отзывы</h2>
       <div id="feedbacks-swiper" class="swiper-container">
         <div class="swiper-wrapper">
@@ -378,6 +396,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="feedbacks__arrow-wrapper">
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
@@ -387,10 +407,10 @@
         <h2>Бесплатное занятие</h2>
         <form autocomplete="off">
           <label aria-label="Имя">
-            <input type="text" name="name" placeholder="Имя" required>
+            <input type="text" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
           </label>
           <label aria-label="Телефон">
-            <input type="tel" name="telephone" placeholder="Телефон" required>
+            <input type="tel" name="telephone" placeholder="Телефон" pattern="^[ 0-9]+$" required>
           </label>
           <button type="submit">Отправить</button>
         </form>
@@ -421,23 +441,27 @@
         </div>
       </section>
     </div>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__img-sections-wrapper">
-          <a class="page-footer__logo" href="#">
-            <picture>
-              <source media="(max-width: 767px)" srcset="./img/logo-mob@1x.png 1x, ./img/logo-mob@2x.png 2x">
-              <source media="(max-width: 1199px)" srcset="./img/logo-tab@1x.png 1x, ./img/logo-tab@2x.png 2x">
-              <img src="./img/logo-desktop@1x.png" srcset="./img/logo-desktop@2x.png 2x" alt="логотоп компании Super Gym" class="page-footer__logo-img" width="87" height="20">
-            </picture>
-          </a>
-          <a class="page-footer__section-link page-footer__section-link--services" href="#">Услуги</a>
-          <a class="page-footer__section-link page-footer__section-link--subs" href="#">Абонементы</a>
-          <a class="page-footer__section-link page-footer__section-link--discounts" href="#">Акции</a>
-          <a class="page-footer__section-link page-footer__section-link--trainers" href="#">Тренеры</a>
-          <a class="page-footer__section-link page-footer__section-link--schedule" href="./schedule.html">Расписание</a>
-        </div>
-        <ul class="page-footer__social-list">
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__img-sections-wrapper">
+        <a class="page-footer__logo" href="#">
+          <picture>
+            <!-- 1x: 67px; 2x: 134px        -->
+            <source media="(max-width: 767px)" srcset="./img/logo-mob@1x.png 1x, ./img/logo-mob@2x.png 2x">
+            <!-- 1x: 80px; 2x: 160px        -->
+            <source media="(max-width: 1199px)" srcset="./img/logo-tab@1x.png 1x, ./img/logo-tab@2x.png 2x">
+            <!-- 1x: 87px; 2x: 174px        -->
+            <img src="./img/logo-desktop@1x.png" srcset="./img/logo-desktop@2x.png 2x" alt="логотоп компании Super Gym" class="page-footer__logo-img" width="87" height="20">
+          </picture>
+        </a>
+        <a class="page-footer__section-link page-footer__section-link--services" href="#">Услуги</a>
+        <a class="page-footer__section-link page-footer__section-link--subs" href="#">Абонементы</a>
+        <a class="page-footer__section-link page-footer__section-link--discounts" href="#">Акции</a>
+        <a class="page-footer__section-link page-footer__section-link--trainers" href="#">Тренеры</a>
+        <a class="page-footer__section-link page-footer__section-link--schedule" href="./schedule.html">Расписание</a>
+      </div>
+      <ul class="page-footer__social-list">
         <li>
           <a href="#">Наш вконтакте
             <svg class="page-footer__icon-vk" width="24" height="13">
@@ -460,9 +484,8 @@
           </a>
         </li>
       </ul>
-      </div>
-    </footer>
-  </main>
+    </div>
+  </footer>
   <script src="./js/main.js"></script>
   <script src="./js/vendor.js"></script>
 </body>

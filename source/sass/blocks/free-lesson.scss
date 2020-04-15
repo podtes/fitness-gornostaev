@@ -114,7 +114,7 @@
 
 @media (max-width: $mob-width) {
   .lesson-contacts-wrapper {
-    width: 320px;
+    width: auto;
   }
 
   .free-lesson {
@@ -130,8 +130,9 @@
   }
 
   .free-lesson input {
+    margin: 0 auto;
     margin-bottom: 0;
-    width: 290px;
+    width: 100%;
   }
 
   .free-lesson label {
@@ -148,6 +149,8 @@
   }
 
   .free-lesson button {
+    display: block;
+    margin: 0 auto;
     width: 290px;
   }
 }

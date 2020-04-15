@@ -23,6 +23,8 @@
   var trainerCard = document.querySelector('.subscriptions__tariffes-item--with-trainer');
   var dailyCard = document.querySelector('.subscriptions__tariffes-item--daily');
   var fullDayCard = document.querySelector('.subscriptions__tariffes-item--fullday');
+  var telephoneInput = document.querySelector('input[type="tel"]');
+  var nameInput = document.querySelector('input[type="text"]');
 
   var getWindowWidth = function () {
     return window.innerWidth || document.body.clientWidth;
@@ -316,7 +318,26 @@
       scheduleButton.addEventListener('click', scheduleButtonClickHandler);
     }
   }
+
   addListenersToExercizes();
+
+  // небольшая валидация формы
+  nameInput.addEventListener('input', function () {
+    nameInput.setCustomValidity('');
+    if (nameInput.validity.valid) {
+      nameInput.setCustomValidity('');
+    } else {
+      nameInput.setCustomValidity('Введите свое имя, не используя цифры!');
+    }
+  });
+  telephoneInput.addEventListener('input', function () {
+    telephoneInput.setCustomValidity('');
+    if (telephoneInput.validity.valid) {
+      telephoneInput.setCustomValidity('');
+    } else {
+      telephoneInput.setCustomValidity('Введите номер телефона без букв!');
+    }
+  });
 
   window.main = {
     getWindowWidth: getWindowWidth

@@ -164,7 +164,7 @@
 @media (max-width: $tab-width) {
   .discounts {
     padding-top: 101px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 
   .discounts h2 {
@@ -198,8 +198,12 @@
   }
 
   .discounts__small-card-gradient-border {
-    margin-bottom: 0;
+    margin-bottom: 20px;
     width: 324px;
+
+    &:last-child {
+      margin-bottom: auto;
+    }
   }
 
   .discounts__small-card--left {

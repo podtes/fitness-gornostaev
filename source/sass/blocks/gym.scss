@@ -4,21 +4,17 @@
 }
 
 .gym__text-wrapper {
+  position: relative;
   padding-left: 60px;
   padding-top: 169px;
-  padding-bottom: 266px;
-  background-image: url("../img/about-pic-play-desk@1x.jpg"),
-    url("../img/about-pic-desk@1x.jpg");
-  background-repeat: no-repeat,
-    no-repeat;
-  background-position: 437px 409px,
-    500px 121px;
-  background-size: 364px 228px,
-    660px 401px;
+  padding-bottom: 260px;
+  background-image: url("../img/about-pic-desk@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 500px 121px;
+  background-size: 660px 401px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/about-pic-play-desk@2x.jpg"),
-      url("../img/about-pic-desk@2x.jpg");
+    background-image: url("../img/about-pic-desk@2x.jpg");
   }
 }
 
@@ -64,24 +60,67 @@
   }
 }
 
+.gym__video-wrapper {
+  position: absolute;
+  top: 409px;
+  left: 37.7%;
+  width: 364px;
+  height: 228px;
+  background-image: url("../img/about-pic-play-desk@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 364px 228px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/about-pic-play-desk@2x.jpg");
+  }
+}
+
+.gym button {
+  position: absolute;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  top: 28%;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: transparent;
+  background-image: url("../img/play-button-desk@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100px 100px;
+  opacity: 0.9;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/play-button-desk@2x.png");
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.85;
+  }
+}
+
 @media (max-width: $tab-width) {
   .gym__text-wrapper {
     padding-left: 0;
     padding-top: 101px;
     padding-bottom: 570px;
     text-align: center;
-    background-image: url("../img/about-pic-play-tab@1x.jpg"),
-      url("../img/about-pic-tab@1x.jpg");
-    background-repeat: no-repeat,
-      no-repeat;
-    background-position: center 587px,
-      center 326px;
-    background-size: 266px 167px,
-      678px 345px;
+    background-image: url("../img/about-pic-tab@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 326px;
+    background-size: 678px 345px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/about-pic-play-tab@2x.jpg"),
-        url("../img/about-pic-tab@2x.jpg");
+      background-image: url("../img/about-pic-tab@2x.jpg");
     }
   }
 
@@ -101,8 +140,33 @@
     margin: 0 auto;
     letter-spacing: 0;
 
-    &:last-child {
+    &:last-of-type {
       display: none;
+    }
+  }
+
+  .gym__video-wrapper {
+    top: 587px;
+    left: 30.4%;
+    width: 266px;
+    height: 167px;
+    background-image: url("../img/about-pic-play-tab@1x.jpg");
+    background-size: 266px 167px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-pic-play-tab@2x.jpg");
+    }
+  }
+
+  .gym button {
+    width: 73px;
+    height: 73px;
+    top: 28%;
+    background-image: url("../img/play-button-tab@1x.png");
+    background-size: 73px 73px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/play-button-tab@2x.png");
     }
   }
 }
@@ -111,18 +175,13 @@
   .gym {
     padding-top: 0;
     padding-bottom: 0;
-    background-image: url("../img/about-pic-play-mob@1x.jpg"),
-      url("../img/about-pic-mob@1x.jpg");
-    background-repeat: no-repeat,
-      no-repeat;
-    background-position: center 688px,
-      center 335px;
-    background-size: 320px 167px,
-      320px 313px;
+    background-image: url("../img/about-pic-tab@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 335px;
+    background-size: 678px 313px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/about-pic-play-mob@2x.jpg"),
-        url("../img/about-pic-mob@2x.jpg");
+      background-image: url("../img/about-pic-tab@2x.jpg");
     }
   }
 
@@ -150,5 +209,18 @@
   .gym p {
     max-width: 255px;
     margin: 0;
+  }
+
+  .gym__video-wrapper {
+    top: 688px;
+    left: -15px;
+    width: 320px;
+    height: 167px;
+    background-size: 320px 167px;
+    background-image: url("../img/about-pic-play-mob@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/about-pic-play-mob@2x.jpg");
+    }
   }
 }
