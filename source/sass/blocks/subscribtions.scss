@@ -22,6 +22,22 @@
   }
 }
 
+.lazy.subscriptions__bg-wrapper {
+  position: relative;
+  max-width: 1550px;
+  margin: 0 auto;
+  padding-bottom: 170px;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 1123px bottom;
+  background-size: 382px 333px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: none;
+  }
+}
+
 .subscriptions h2 {
   margin: 0;
   margin-bottom: 33px;
@@ -180,7 +196,6 @@
   font-size: 60px;
   line-height: 60px;
   color: #102654;
-  //TODO: с рублем надо что-то сделать или пускай таким остается?
 }
 
 .subscriptions__tariffes-item a {
@@ -224,6 +239,19 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/weights-tab@2x.png");
+    }
+  }
+
+  .lazy.subscriptions__bg-wrapper {
+    position: relative;
+    max-width: 1199px;
+    padding-bottom: 188px;
+    background-image: none;
+    background-position: 422px bottom;
+    background-size: 423px 444px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
     }
   }
 

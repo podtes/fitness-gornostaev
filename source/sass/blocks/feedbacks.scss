@@ -38,6 +38,26 @@
   }
 }
 
+.lazy.feedbacks__card {
+  padding-left: 170px;
+  padding-top: 54px;
+  padding-right: 60px;
+  padding-bottom: 58px;
+  margin: 0 auto;
+  text-align: left;
+  width: 560px;
+  background-color: #1c3374;
+  box-sizing: border-box;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 62px 62px;
+  background-size: 80px 80px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: none;
+  }
+}
+
 .feedbacks__card h3 {
   margin: 0;
   margin-bottom: 12px;
@@ -148,6 +168,21 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/feedback-ava-mob@2x.png");
+    }
+  }
+
+  .lazy.feedbacks__card {
+    padding-top: 48px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 35px;
+    width: calc(100% - 94px);
+    background-image: none;
+    background-position: 41px 40px;
+    background-size: 68px 68px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
     }
   }
 

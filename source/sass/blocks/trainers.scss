@@ -158,6 +158,86 @@
       }
     }
   }
+}
+
+.lazy.trainers__card {
+  margin: 0;
+  padding-top: 244px;
+  padding-bottom: 24px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 260px 294px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+
+  &--pavlova {
+    background-image: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
+    }
+
+    &:hover {
+      background-image: none;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: none;
+      }
+    }
+  }
+
+  &--lavrov {
+    background-image: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
+    }
+
+    &:hover {
+      background-image: none;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: none;
+      }
+    }
+  }
+
+  &--pashkov {
+    background-image: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
+    }
+
+    &:hover {
+      background-image: none;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: none;
+      }
+    }
+  }
+
+  &--ketova {
+    background-image: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
+    }
+
+    &:hover {
+      background-image: none;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: none;
+      }
+    }
+  }
 
   &:hover {
     padding-top: 51px;

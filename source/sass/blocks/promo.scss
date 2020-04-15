@@ -21,6 +21,21 @@
   }
 }
 
+.lazy.promo__card {
+  padding-top: 89px;
+  padding-left: 78px;
+  padding-bottom: 109px;
+  background-color: #ed0233;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 660px 500px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: none;
+  }
+}
+
 .promo___card-wrapper {
   margin-bottom: 2px;
   display: flex;
@@ -182,6 +197,20 @@
     }
   }
 
+  .lazy.promo__card {
+    padding-top: 52px;
+    padding-left: 45px;
+    padding-bottom: 60px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 386px 292px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
+    }
+  }
+
   .promo___card-wrapper {
     margin-bottom: 0;
   }
@@ -272,6 +301,18 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/contest-pic-mob@2x.jpg");
+    }
+  }
+
+  .lazy.promo__card {
+    padding-bottom: 352px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 290px 292px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
     }
   }
 
