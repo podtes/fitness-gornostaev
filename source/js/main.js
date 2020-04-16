@@ -335,15 +335,17 @@
   };
 
   // валидация телефона
-  telephoneInput.addEventListener('change', function () {
-    validatePhoneInputHandler(telephoneInput);
-  });
-  telephoneInput.addEventListener('focus', function () {
-    validatePhoneInputHandler(telephoneInput);
-  });
-  telephoneInput.addEventListener('blur', function () {
-    validatePhoneInputHandler(telephoneInput);
-  });
+  if (telephoneInput) {
+    telephoneInput.addEventListener('change', function () {
+      validatePhoneInputHandler(telephoneInput);
+    });
+    telephoneInput.addEventListener('focus', function () {
+      validatePhoneInputHandler(telephoneInput);
+    });
+    telephoneInput.addEventListener('blur', function () {
+      validatePhoneInputHandler(telephoneInput);
+    });
+  }
 
   if (nameInput) {
     nameInput.addEventListener('input', function () {
