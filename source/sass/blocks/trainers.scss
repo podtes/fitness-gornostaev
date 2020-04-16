@@ -158,6 +158,19 @@
       }
     }
   }
+
+  &:hover {
+    padding-top: 51px;
+    padding-bottom: 52px;
+  }
+
+  &:hover > p {
+    display: block;
+  }
+
+  &:hover > ul {
+    display: block;
+  }
 }
 
 .lazy.trainers__card {
@@ -237,19 +250,6 @@
         background-image: none;
       }
     }
-  }
-
-  &:hover {
-    padding-top: 51px;
-    padding-bottom: 52px;
-  }
-
-  &:hover > p {
-    display: block;
-  }
-
-  &:hover > ul {
-    display: block;
   }
 }
 

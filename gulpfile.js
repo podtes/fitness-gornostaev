@@ -16,10 +16,13 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var concat = require("gulp-concat");
+var uglify = require('gulp-uglify');
+var gzip = require('gulp-gzip');
 
 gulp.task("scripts", function () {
   return gulp.src(["./node_modules/swiper/js/swiper.js", "./source/js/swipers.js", "./node_modules/svgxuse/svgxuse.js", "./source/js/lazyload.js"])
     .pipe(concat("vendor.js"))
+    .pipe(uglify())
     .pipe(gulp.dest("./build/js"));
 });
 
