@@ -322,6 +322,29 @@
   addListenersToExercizes();
 
   // небольшая валидация формы
+  var validatePhoneInputHandler = function (field) {
+    if (field) {
+      if (field.value.length > 4 && field.value.length < 17) {
+        field.setCustomValidity('Неверный формат!');
+      } else if (field.value.length <= 3 && field.value.length >= 1) {
+        field.setCustomValidity('Введите номер телефона!');
+      } else {
+        field.setCustomValidity('');
+      }
+    }
+  };
+
+  // валидация телефона
+  telephoneInput.addEventListener('change', function () {
+    validatePhoneInputHandler(telephoneInput);
+  });
+  telephoneInput.addEventListener('focus', function () {
+    validatePhoneInputHandler(telephoneInput);
+  });
+  telephoneInput.addEventListener('blur', function () {
+    validatePhoneInputHandler(telephoneInput);
+  });
+
   if (nameInput) {
     nameInput.addEventListener('input', function () {
       nameInput.setCustomValidity('');
@@ -329,17 +352,6 @@
         nameInput.setCustomValidity('');
       } else {
         nameInput.setCustomValidity('Введите свое имя, не используя цифры!');
-      }
-    });
-  }
-
-  if (telephoneInput) {
-    telephoneInput.addEventListener('input', function () {
-      telephoneInput.setCustomValidity('');
-      if (telephoneInput.validity.valid) {
-        telephoneInput.setCustomValidity('');
-      } else {
-        telephoneInput.setCustomValidity('Введите номер телефона без букв!');
       }
     });
   }

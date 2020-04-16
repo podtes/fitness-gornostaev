@@ -86,6 +86,8 @@
 
 .feedbacks .swiper-button-next,
 .feedbacks .swiper-button-prev {
+  top: 40%;
+
   &::after {
     content: "";
     width: 16px;
@@ -96,12 +98,10 @@
 
 .feedbacks .swiper-button-prev {
   left: 259px;
-  top: 50%;
 }
 
 .feedbacks .swiper-button-next {
   right: 259px;
-  top: 50%;
 
   &::after {
     transform: rotate(180deg);
@@ -135,12 +135,12 @@
 
   .feedbacks .swiper-button-prev {
     left: 40px;
-    top: 50%;
+    top: 41%;
   }
 
   .feedbacks .swiper-button-next {
     right: 40px;
-    top: 50%;
+    top: 41%;
   }
 }
 
@@ -214,11 +214,11 @@
 
   .feedbacks .swiper-button-next {
     right: 6px;
-    top: 50%;
+    top: 44%;
   }
 
   .feedbacks .swiper-button-prev {
     left: 6px;
-    top: 50%;
+    top: 44%;
   }
 }

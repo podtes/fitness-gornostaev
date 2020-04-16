@@ -297,6 +297,13 @@
   .subscriptionss__tariffes-item b {
     left: 131px;
   }
+
+  .subscriptions__tariffes-item a {
+    &:hover {
+      padding: 26px 44px;
+      border: transparent;
+    }
+  }
 }
 
 @media (max-width: $mob-width) {
