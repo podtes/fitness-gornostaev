@@ -322,22 +322,27 @@
   addListenersToExercizes();
 
   // небольшая валидация формы
-  nameInput.addEventListener('input', function () {
-    nameInput.setCustomValidity('');
-    if (nameInput.validity.valid) {
+  if (nameInput) {
+    nameInput.addEventListener('input', function () {
       nameInput.setCustomValidity('');
-    } else {
-      nameInput.setCustomValidity('Введите свое имя, не используя цифры!');
-    }
-  });
-  telephoneInput.addEventListener('input', function () {
-    telephoneInput.setCustomValidity('');
-    if (telephoneInput.validity.valid) {
+      if (nameInput.validity.valid) {
+        nameInput.setCustomValidity('');
+      } else {
+        nameInput.setCustomValidity('Введите свое имя, не используя цифры!');
+      }
+    });
+  }
+
+  if (telephoneInput) {
+    telephoneInput.addEventListener('input', function () {
       telephoneInput.setCustomValidity('');
-    } else {
-      telephoneInput.setCustomValidity('Введите номер телефона без букв!');
-    }
-  });
+      if (telephoneInput.validity.valid) {
+        telephoneInput.setCustomValidity('');
+      } else {
+        telephoneInput.setCustomValidity('Введите номер телефона без букв!');
+      }
+    });
+  }
 
   window.main = {
     getWindowWidth: getWindowWidth

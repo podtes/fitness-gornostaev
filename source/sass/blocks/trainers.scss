@@ -335,6 +335,8 @@
 
   .trainers .swiper-button-next,
   .trainers .swiper-button-prev {
+    top: 42%;
+
     &::after {
       width: 16px;
       height: 32px;
@@ -343,11 +345,9 @@
 
   .trainers .swiper-button-prev {
     left: 40px;
-    top: 50%;
   }
 
   .trainers .swiper-button-next {
-    top: 50%;
     right: 40px;
   }
 }
@@ -355,7 +355,7 @@
 @media (max-width: $mob-width) {
   .trainers {
     padding-top: 60px;
-    padding-bottom: 69px;
+    padding-bottom: 47px;
   }
 
   .trainers h2 {
@@ -394,6 +394,8 @@
 
   .trainers .swiper-button-next,
   .trainers .swiper-button-prev {
+    top: 39%;
+
     &::after {
       width: 19px;
       height: 20px;
